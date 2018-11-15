@@ -79,7 +79,7 @@
         border-radius: 100%;
       }
       .button {
-        background-color: #4CAF50;
+        background-color: #476D60;
         border: none;
         border-radius: 10px;
         color: white;
@@ -90,10 +90,6 @@
         font-size: 16px;
         margin-left: auto;
         margin-right: auto;
-        cursor: pointer;
-      }
-      .button:hover {
-        background-color: #476D60;
       }
       .message {
         margin-top: 10px;
@@ -152,13 +148,14 @@
               <b>What: </b>Our high tea service. Choose your favorite tea as we serve a delicious 
               homemade assortment of sandwiches, quiche, cakes and baked delights. 
               <br><br>
-              <b>When: </b>11 a.m. Sunday, Nov. 18
+              <b>When: </b>Check back
               <br><br>
-              <b>Who: </b>You are probably wondering whose idea this was. You will just have to show up
+              <b>Who: </b>You are probably wondering whose idea this was. You will just have to reschedule
               in order to find out!
             </p>
             <div class="row">
-              <input id="mainButton" type="button" class="button" value="OK! Yes to Tea!">
+              <!-- Hover, cursor disabled -->
+              <input id="mainButton" type="button" class="button" value="Un momento, por favor" disabled="true" style="background-color: grey">
             </div>
           </div>
           <div class="col-lg-4 mr-auto">
@@ -181,9 +178,7 @@
             </a>
           </div>
           <div class="message">
-            <h1>Thank you! <i class="fas fa-heart" id="heart"></i></h1>
-            <p>We are delighted to serve y'all High Tea!</p>
-            <p>See you at <b>11 a.m. on Sunday, Nov. 18, 2018.</b></p>
+            <!-- MESSAGE -->
             <br>
             <p style="padding-left: 60px">1645 McLendon Ave NE</p>
             <p style="padding-left: 80px">Atlanta, GA 30307</p>
