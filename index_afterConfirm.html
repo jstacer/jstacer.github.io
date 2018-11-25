@@ -222,58 +222,10 @@
     </style>
   </head>
   <body id="top">
-    <!-- MAIN bg_heart -->
-    <section class="bg-white text-black mb-0" id="before">
-      <div class="container">
-        <div class="row" style="margin-top: -20px;">
-          <h2 id="pagetitle">Join Us For High Tea!</h2>
-        </div>
-        <br>
-        <br>
-        <!-- Two columns -->
-        <div class="row">
-          <div class="col-lg-4 ml-auto" style="margin-top: 20px">
-              <p class="lead" style="font-size: 1.3em">
-                Choose your favorite tea as we serve a delicious assortment 
-                of sandwiches, quiche, cakes and baked delights.
-              </p>
-              <form>
-                  <div class="form-group" style="margin-top: 35px">
-                      <label for="sel1">Pick a day:</label>
-                      <select class="form-control" id="sel1" disabled="true">
-                          <option></option>
-                          <option>Sunday, December 2</option>
-                          <option>Saturday, December 8</option>
-                          <option>Sunday, December 9</option>
-                          <option>Saturday, December 15</option>
-                          <option>Sunday, December 16</option>
-                          <option>Sorry, we can't make any of these dates</option>
-                      </select>
-                      <br>
-                      <label for="sel2">Pick a time:</label>
-                      <select class="form-control" id="sel2" disabled="true">
-                          <option></option>
-                          <option>11:00 a.m.</option>
-                          <option>2:00 p.m.</option>
-                          <option>5:00 p.m.</option>
-                      </select>
-                  </div>
-              </form>
-              <button id="mainButton" class="buttonOff" disabled="true" 
-                                      style="margin-top: 35px"> Hagamos que suceda </button>
-              
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <a href="https://www.drbombays.com/" target="_blank">
-              <img src="img/drbombaylogo.png" alt="logo" height="440" width="440">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- After click -->
-    <div id="after" style="display: none">
+    <div id="after">
       <div class="container">
         <div id="box">
           <div>
@@ -285,7 +237,7 @@
           <div class="message">
             <h1>Thank you! <i class="fas fa-heart" id="heart"></i></h1>
             <p>We are delighted to serve y'all High Tea!</p>
-            <p>See you at <b id="newText"></b></p>
+            <p>See you at <b id="newText">xxxx</b></p>
             <br>
             <p style="padding-left: 60px">1645 McLendon Ave NE</p>
             <p style="padding-left: 80px">Atlanta, GA 30307</p>
@@ -376,7 +328,7 @@
         var timeText = $("#sel2 :selected").text();
 
         if(dateText=="Sorry, we can't make any of these dates"){
-          custConfirm("", "Are you sure you can't make any of the dates/times?");
+          custConfirm("", "Are you sure you can't make any of the dates?");
         }else if(dateText=="" && timeText=="")
           custAlert("", "You must select a day and time!");
         else if(dateText=="" && timeText!="")
