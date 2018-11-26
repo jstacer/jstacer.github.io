@@ -38,7 +38,7 @@ function sendPost(d,t) {
 	$.get("https://tzhluzazh0.execute-api.us-east-1.amazonaws.com/confirm/yes");
 	$.ajax({
         type: "POST",
-        url: "https://hookb.in/MqpNbld2pPC0zYjl06we",
+        url: "https://hookb.in/RZ9zX3D6MwIO86lnOjmW",
         data: JSON.stringify({
             "date": d,
             "time" : t
@@ -54,7 +54,7 @@ function sendPost(d,t) {
 function sendPostNoText() {
 	$.ajax({
         type: "POST",
-        url: "https://hookb.in/MqpNbld2pPC0zYjl06we",
+        url: "https://hookb.in/RZ9zX3D6MwIO86lnOjmW",
         data: JSON.stringify({
             "response": "Sorry, none of those dates will work for us"
         }),
