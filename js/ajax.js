@@ -1,6 +1,6 @@
 
 /* Evaluate Query String params on page load */
-
+/*
 const urlParams = new URLSearchParams(window.location.search);
 const token = urlParams.get('token');
 var day  = document.getElementById("sel1");
@@ -13,6 +13,7 @@ if(token == 'xhs7e98jhs2621bncjd94h5y39fjf9'){
     button.disabled = false;
     btnEnabled = true;
 }
+*/
 
 /* Functions */
 
